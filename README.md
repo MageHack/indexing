@@ -10,7 +10,7 @@ https://github.com/lilmuckers/magento-lilmuckers_queue
 
 **2. Install phpBeanstalkd work queue**
 http://kr.github.io/beanstalkd/
-* you don’t need to configure it, just start it by calling beanstalkd in command line
+* you don’t need to configure it, just start it by calling `beanstalkd` in command line
 
 **3. Add beanstalkd to your magento configuration:**
 * open /etc/local.xml and add the following in the `<global>` node:
