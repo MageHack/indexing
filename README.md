@@ -1,7 +1,7 @@
 ###Magehack_Indexing
 
 ## 1. Overview
-Move the indexers to a queue to make the back-end more responsive for store managers.
+Move the indexers to a queue to make the back-end more responsive.
 
 
 ## 2. Installation, Configuration & Usage
