@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magehack_Indexing>
+            <version>0.1.0</version>
+        </Magehack_Indexing>
+    </modules>
+    <global>
+        <models>
+            <magehackindexing>
+                <class>Magehack_Indexing_Model</class>
+            </magehackindexing>
+            <index>
+                <rewrite>
+                    <process>Magehack_Indexing_Model_Index_Process</process>
+                </rewrite>
+            </index>
+        </models>
+        <blocks>
+            <magehackindexing>
+                <class>Magehack_Indexing_Block</class>
+            </magehackindexing>
+        </blocks>
+        <helpers>
+            <magehackindexing>
+                <class>Magehack_Indexing_Helper</class>
+            </magehackindexing>
+        </helpers>
+    </global>
+
+    <queues>
+        <magehackindexing>
+            <label>Reindex</label>
+            <class>magehackindexing/queue</class>
+            <workers>
+                <reindex>
+                    <class>magehackindexing/worker</class>
+                    <method>reindex</method>
+                </reindex>
+            </workers>
+        </magehackindexing>
+    </queues>
+</config>

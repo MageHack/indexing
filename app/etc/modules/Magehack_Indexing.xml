@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magehack_Indexing>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_CatalogIndex/>
+                <Mage_Index/>
+                <Lilmuckers_Queue/>
+            </depends>
+        </Magehack_Indexing>
+    </modules>
+</config>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <catalog>
+            <groups>
+                <magehackindexing>
+                    <label>Indexing</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>101</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <use_queue translate="label">
+                            <label>Use The Queue</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>
+                                <![CDATA[If set to YES, the reindex processes will be sent to a queue.]]>
+                            </comment>
+                        </use_queue>
+                    </fields>
+                </magehackindexing>
+            </groups>
+        </catalog>
+    </sections>
+</config>
