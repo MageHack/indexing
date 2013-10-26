@@ -32,7 +32,7 @@ http://kr.github.io/beanstalkd/
 * now every time you do a reindex it will be added to the queue
 * to run the queued items you need to run the /shell/queue.php:
 
-`php -f queue.php -- watch indexing`
+`php -f queue.php --watch magehackindexing`
 
 this will create a watcher and it will run all the indexing queues that we add
 
